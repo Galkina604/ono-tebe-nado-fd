@@ -1,38 +1,49 @@
 .header {
-    padding: 92px 24px;
-    display: grid;
-    grid-template-columns: 1fr min-content 1fr;
-    align-items: center;
+  padding: 92px 50px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  height: 293px;
+}
+
+.header__menu {
+  justify-self: start;
 }
 
 .header__logo {
-    display: block;
-    width: 148px;
+  display: block;
+  width: 148px;
 }
 
 .header__links-list {
-    display: flex;
-    gap: 32px;
-    padding: 0;
-    margin: 0;
-    font-size: 18px;
+  display: flex;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
 }
 
 .header__links-list-item {
-    list-style: circle;
+  list-style: circle;
 }
 
 .header__links-list-item_no-bullit {
-    list-style: none;
+  list-style: none;
+}
+
+.address {
+  font-style: normal;
+  line-height: 1.35;
+  font-size: 18px;
 }
 
 .header__address {
-    font-style: normal;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 240px;
-    justify-self: end;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 240px;
+  justify-self: end;
 }
 
 .cover {
@@ -99,7 +110,7 @@
   color: white;
   font-size: 22px;
   text-transform: uppercase;
-  word-spacing: 18px;
+  word-spacing: 19px;
 }
 
 .bet-button {
@@ -122,12 +133,12 @@
 
 .lots {
   margin-top: 180px;
-  padding: 0 24px;
+  padding: 0 50px;
 }
 
 .lots__heading {
   margin-bottom: 27px;
-  padding-left: 40px;
+  text-transform: uppercase;
   font-size: 40px;
 }
 
@@ -141,14 +152,13 @@
 }
 
 .lots__card-list-item {
-    width: 334px;
-    height: 596px;
+    width: calc((100% - 50px) / 3);
+    min-height: 596px;
 }
 
 .lots__look-more-link {
     display: inline-block;
     margin-top: 30px;
-    margin-left: 40px;
     font-size: 20px;
 }
 
@@ -201,7 +211,7 @@
 }
 
 .about {
-  margin-top: 120px;
+  margin-top: 180px;
   padding: 0 50px;
   display: grid;
   grid-template-columns: 334px 1fr;
@@ -215,7 +225,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
   border-radius: 50%;
 }
 
@@ -224,7 +233,7 @@
 }
 
 .about__title {
-  margin-bottom: 100px;
+  margin-bottom: 72px;
   font-size: 40px;
   text-transform: uppercase;
 }
@@ -264,6 +273,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    align-items: start;
 }
 
 .footer__menu-link_active {
